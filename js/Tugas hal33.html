@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Hal 33</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var merkSemen;
+		var hargaSatuan;
+		var jumlahPembeli;
+		var totalBiaya;
+		var biayaKirim;
+		var diskon
+		merkSemen = prompt("Masukan merk semen :");
+		hargaSatuan = prompt("Masukan harga satuan :");
+		jumlahPembeli = prompt("Masukan jumlah pembelian barang :");
+		totalBiaya = hargaSatuan * jumlahPembeli;
+
+		if (jumlahPembeli < 10) {
+			biayaKirim = 5000;
+			totalBiaya = totalBiaya + biayaKirim;
+		} else {
+			diskon = totalBiaya * 0.05;
+			totalBiaya = totalBiaya - diskon
+		}
+		document.write("Menu informasi pembeli semen <br>");
+		document.write("Merk Semen : " + merkSemen + "<br>");
+		document.write("Harga Satuan : " + hargaSatuan + "<br>");
+		document.write("Jumlah Pembelian : " + jumlahPembeli + "<br>");
+		document.write("Total Biaya  yang harus dibayar : " + totalBiaya);
+
+	</script>
+
+</body>
+</html>
